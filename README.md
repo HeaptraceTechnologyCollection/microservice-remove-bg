@@ -33,8 +33,8 @@ $ omg exec removebg -a image='{"base64imageData":"<base64image_Data>"} -e API_KE
         {"base64Data" :"<base64image_Data>"}
       }
 
-### License
-[MIT](https://choosealicense.com/licenses/mit/)
+## License
+### [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Docker
 ### Build
@@ -43,5 +43,5 @@ docker build -t microservice-remove-bg .
 ```
 ### RUN
 ```
-docker run -p 5000:5000 microservice-remove-bg
+docker run -p 3000:3000 microservice-remove-bg
 ```
