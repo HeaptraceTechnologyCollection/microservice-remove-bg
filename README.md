@@ -31,6 +31,8 @@ $ omg exec removebg -a image='{"base64imageData":"<base64image_Data>"} -e API_KE
 * Set body in JSON(application/json) format
 * eg: {{"base64Data" :"<base64image_Data>"}}
 
+```
+
 ## License
 ### [MIT](https://choosealicense.com/licenses/mit/)
 
