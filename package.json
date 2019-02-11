@@ -1,0 +1,35 @@
+{
+  "name": "omg-remove-bg",
+  "version": "1.0.0",
+  "description": "Remove backgroung microservice for OMG",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heaptracetechnology/microservice-imagediff.git"
+  },
+  "author": "Rohit Shetty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heaptracetechnology/microservice-imagediff"
+  },
+  "homepage": "https://github.com/heaptracetechnology/microservice-imagediff#readme",
+  "dependencies": {
+    "audit": "0.0.6",
+    "body-parser": "^1.14.2",
+    "express": "^4.16.4",
+    "fix": "0.0.6",
+    "fs": "0.0.1-security",
+    "multer": "1.1.0",
+    "pngjs": "3.3.3",
+    "remove.bg": "^1.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "should": "^7.1.1",
+    "supertest": "^3.4.2"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha"
+  }
+}

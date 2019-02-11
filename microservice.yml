@@ -1,0 +1,36 @@
+omg: 1
+lifecycle:
+  startup:
+    command: ["npm", "start"]
+info:
+  version: 1.0.0
+  title: Remove Background
+  description: This is a simple remove background service
+  contact:
+    name: Rohit Shetty
+    url: https://github.com
+    email: rohits@heaptrace.com
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT 
+actions:
+  removebg:
+    help: Get background removed from image
+    arguments:
+      image:
+        type: object
+        in: requestBody
+        help: First and second image to compare
+    http:
+      port: 3000
+      method: post
+      path: /remove-bg
+      contentType: multipart/form-data
+    output:
+      contentType: application/json
+      type: object
+environment:
+  API_KEY:
+    required: true
+    type: string
+    help: Api key for service.
