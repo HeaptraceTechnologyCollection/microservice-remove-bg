@@ -21,10 +21,12 @@
     "fs": "0.0.1-security",
     "multer": "1.1.0",
     "pngjs": "3.3.3",
-    "remove.bg": "^1.0.1"
+    "remove.bg": "^1.0.1",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "mocha": "^5.2.0",
+    "nock": "^10.0.6",
     "should": "^7.1.1",
     "supertest": "^3.4.2"
   },

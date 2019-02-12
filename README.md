@@ -18,7 +18,7 @@ This microservice's goal is to compare different images.
 
 ### CLI
 ```sh
-$ omg exec removebg -a image='{"base64imageData":"<base64image_Data>"} -e API_KEY=<API_KEY>
+$ omg exec removebg -a base64imageData='<base64image_Data>' -e API_KEY=<API_KEY>
 ```
 
 ### Postman
@@ -29,7 +29,7 @@ $ omg exec removebg -a image='{"base64imageData":"<base64image_Data>"} -e API_KE
 * - apikey = <API_KEY>
 * - Content-Type = application/json
 * Set body in JSON(application/json) format
-* eg: {{"base64Data" :"<base64image_Data>"}}
+* eg: {"base64Data" :"<base64image_Data>"}
 
 ```
 

@@ -17,8 +17,8 @@ actions:
   removebg:
     help: Get background removed from image
     arguments:
-      image:
-        type: object
+      base64imageData:
+        type: string
         in: requestBody
         help: First and second image to compare
     http:

@@ -7,18 +7,18 @@ var app = express();
 app.use(bodyParser.json());
 var remove_bg = require("remove.bg");
 
-app.post('/remove-bg', function (req, res) {
 
-    if (req.body.image.base64imageData == undefined) {
-        return res.end("Image base64 data not found", err);
+app.post('/remove-bg', function (req, res) {
+    if (req.body.base64imageData == undefined) {
+        return res.end("Image base64 data not found",req.body.base64imageData);
     }
 
     var apiKey = process.env.API_KEY;
     if (apiKey == undefined) {
-        return res.end("Please provide API Key", err);
+        return res.end("Please provide API Key");
     }
     
-    var base64img = req.body.image.base64imageData;
+    var base64img = req.body.base64imageData;
     var outputFile = `${__dirname}/outfile.png`;
 
     remove_bg.removeBackgroundFromImageBase64({
