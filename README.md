@@ -8,8 +8,13 @@ An OMG service to remove background from the image in which at least one detecta
 ### OMG
 
 * omg validate
+```
+omg validate
+```
 * omg build
-
+```
+omg build
+```
 ### Test Service
 
 * Remove background support JPG and PNG images with a maximum file size of 8 MB converted into base64 format. Every image must contain at least one detectable person.
