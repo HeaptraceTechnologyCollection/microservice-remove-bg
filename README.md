@@ -21,7 +21,7 @@ omg build
 
 ### CLI
 ```sh
-$ omg exec removebg -a base64imageData='<base64image_Data>' -e API_KEY=<API_KEY>
+$ omg exec process -a base64content='<base64image_Data>' -e API_KEY=<API_KEY>
 ```
 
 ### Postman
