@@ -3,8 +3,6 @@ An OMG service to remove background from the image in which at least one detecta
 
 [![Open Microservice Guide](https://img.shields.io/badge/OMG-enabled-brightgreen.svg?style=for-the-badge)](https://microservice.guide)
 
-This microservice's goal is to compare different images.
-
 ## [OMG](hhttps://microservice.guide) CLI
 
 ### OMG
