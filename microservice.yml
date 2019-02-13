@@ -14,10 +14,10 @@ info:
     name: MIT
     url: https://opensource.org/licenses/MIT 
 actions:
-  removebg:
+  process:
     help: Get background removed from image
     arguments:
-      base64imageData:
+      base64content:
         type: string
         in: requestBody
         help: First and second image to compare
@@ -25,10 +25,8 @@ actions:
       port: 3000
       method: post
       path: /remove-bg
-      contentType: multipart/form-data
     output:
-      contentType: application/json
-      type: object
+      type: string
 environment:
   API_KEY:
     required: true
