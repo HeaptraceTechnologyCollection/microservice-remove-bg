@@ -21,7 +21,7 @@ omg build
 
 ### CLI
 ```sh
-$ omg exec process -a base64content='<base64image_Data>' -e API_KEY=<API_KEY>
+$ omg run process -a base64content=='<base64_content>' -e API_KEY=<API_KEY>
 ```
 
 ### Postman

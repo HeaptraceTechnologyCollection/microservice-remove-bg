@@ -6,16 +6,22 @@ var fs = require("fs");
 var app = express();
 app.use(bodyParser.json());
 var remove_bg = require("remove.bg");
+var HttpStatus = require('http-status-codes');
 
+var message = {
+    success: "false",
+  };
 
 app.post('/remove-bg', function (req, res) {
     if (req.body.base64content == undefined) {
-        return res.end("Image base64 data not found",req.body.base64imageData);
+        message.error = "Image base64 data not found";
+        return res.status(HttpStatus.BAD_REQUEST).send(message);
     }
 
     var apiKey = process.env.API_KEY;
     if (apiKey == undefined) {
-        return res.end("Please provide API Key");
+        message.error = "Please provide API Key";
+        return res.status(HttpStatus.BAD_REQUEST).send(message);
     }
     
     var base64img = req.body.base64content;
@@ -28,10 +34,10 @@ app.post('/remove-bg', function (req, res) {
         outputFile: outputFile
     }).then(function (result) {
         var base64imgoutput = fs.readFileSync(outputFile, { encoding: "base64" });
-        res.end(base64imgoutput);
-    })["catch"](function (errors) {
-        res.end(JSON.stringify(errors))
-        return res.end("Error : ", errors);
+        return res.status(HttpStatus.OK).send(base64imgoutput);
+    })["catch"](function (error) {
+         message.error = error;
+         return res.status(HttpStatus.BAD_REQUEST).send(message);
     });
 });
 

@@ -15,12 +15,12 @@ info:
     url: https://opensource.org/licenses/MIT 
 actions:
   process:
-    help: Get background removed from image
+    help: Get background removed from image : response example output: iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAYAAAAxU7r0AAEAAElEQVR4Xuz9d7RGoDcCvRHojUBvBHoj0BuB3gj0RqA3Ar0R6I1AbwR6I9Abgd4I9EagNwK9EeiNQG8EeiPQ....
     arguments:
       base64content:
         type: string
         in: requestBody
-        help: First and second image to compare
+        help: Image base64 data will process to remove background from image and provide base64 data.
     http:
       port: 3000
       method: post

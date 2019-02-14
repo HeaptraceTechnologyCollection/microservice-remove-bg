@@ -19,6 +19,7 @@
     "express": "^4.16.4",
     "fix": "0.0.6",
     "fs": "0.0.1-security",
+    "http-status-codes": "^1.3.0",
     "multer": "1.1.0",
     "pngjs": "3.3.3",
     "remove.bg": "^1.0.1",
