@@ -27,6 +27,10 @@ actions:
       path: /remove-bg
     output:
       type: string
+      contentType: application/json
+      properties:
+        base64output:
+          type: string
 environment:
   API_KEY:
     required: true
