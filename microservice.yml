@@ -30,6 +30,7 @@ actions:
       contentType: application/json
       properties:
         base64output:
+          help: The base64 content for removed background image 
           type: string
 environment:
   API_KEY:
