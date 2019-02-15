@@ -15,7 +15,7 @@ info:
     url: https://opensource.org/licenses/MIT 
 actions:
   process:
-    help: Get background removed from image : response example output: iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAYAAAAxU7r0AAEAAElEQVR4Xuz9d7RGoDcCvRHojUBvBHoj0BuB3gj0RqA3Ar0R6I1AbwR6I9Abgd4I9EagNwK9EeiNQG8EeiPQ....
+    help: Get background removed from image
     arguments:
       base64content:
         type: string
@@ -27,10 +27,9 @@ actions:
       path: /remove-bg
     output:
       type: string
-      contentType: application/json
       properties:
         base64output:
-          help: The base64 content for removed background image 
+          help: The base64 content for removed background image
           type: string
 environment:
   API_KEY:
