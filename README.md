@@ -11,6 +11,7 @@ An OMG service to remove background from the image in which at least one detecta
 ##### Remove Background
 ```coffee
 >>> remove-bg process base64content:'base64data'
+{base64output:"Base64data of output image "}
 ```
 
 Curious to [learn more](https://docs.storyscript.io/)?
