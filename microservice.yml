@@ -27,10 +27,6 @@ actions:
       path: /remove-bg
     output:
       type: string
-      properties:
-        base64output:
-          help: The base64 content for removed background image
-          type: string
 environment:
   API_KEY:
     required: true
